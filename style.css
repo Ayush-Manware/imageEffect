@@ -1,0 +1,38 @@
+*{
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.container{
+    border: 1px solid red;
+    display: grid;
+    padding: 2vw;
+    gap: 1vw;
+}
+
+.three{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.six{
+    grid-column: 1 / 4;
+}
+
+
+.divs{
+    overflow: hidden;
+    transition: all 2s linear;
+}
+
+.divs:hover .image{
+    scale: 1.3;
+    overflow: hidden;
+}
+
+
+.image{
+    width: 100%;
+    height: 100%;
+    transition: all 2s linear;
+}
