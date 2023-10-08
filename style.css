@@ -1,22 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Merriweather&family=Montserrat:wght@100;200&family=Pacifico&family=Playfair+Display:wght@500&family=Tilt+Prism&family=Ysabeau+Infant&display=swap');
+
+
 *{
     margin: 0vw;
     padding: 0vw;
 }
 
-.container{
+body{
     background-color: rgb(14, 13, 30);
+}
+
+.container{
     display: grid;
+    grid-area: auto auto auto;
     padding: 2vw;
     gap: 1vw;
 }
 
 .three{
-    grid-column: 3/4;
-    grid-row: 1/3;
-}
-
-.six{
-    grid-column: 1 / 4;
+   grid-column: 3/4;
 }
 
 h2{
@@ -26,6 +28,8 @@ h2{
     color: gray;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.801);
     transition: all 0.2s linear;
+    padding: 2vw 0vw 0vw 0vw;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 
 h2:hover{
@@ -34,7 +38,6 @@ h2:hover{
 
 .divs{
     overflow: hidden;
-    transition: all 2s linear;
 }
 
 .divs:hover .image{
@@ -46,4 +49,39 @@ h2:hover{
     width: 100%;
     height: 100%;
     transition: all 2s linear;
+}
+
+.iconContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon{
+    width: 5vw;
+    padding: 0px;
+}
+
+.iconTwo{
+    width: 2vw; 
+}
+
+@media screen and (max-width:600px){
+    .container{
+        gap: 2px;
+    }
+    .one{
+        grid-column: 1 / 4;
+    }
+
+    .two{
+        grid-column: 1/2;
+    }
+
+    h2{
+        font-size: 8vw;
+    }
+
+    .icon{
+        width: 10vw;
+    }
 }
